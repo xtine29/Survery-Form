@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url(images/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+p {
+  font-size: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 720px;
+  margin: 3.125rem auto 0 auto;
+  background-color: #0a1059;
+  padding: 10px 10px;
+  border-radius: 50px;
+}
+
+.header h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 45px;
+  padding-top: 20px;
+  margin-bottom: 0;
+  text-shadow: 5px 6px 10px rgba(0, 0, 0, 1);
+}
+
+#description {
+  font-family: 'Truculenta', sans-serif;
+  font-size: 23px;
+  font-style: italic;
+  text-align: center;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 23px;
+  margin-bottom: 0.5rem;
+}
+
+.clue {
+  color: white;
+  font-size: 15px;
+}
+
+.clue-question {
+  margin-left: 5px;
+  font-size: ;
+}
+
+option {
+  font-size: 15px;
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+.form-group p {
+  color: #b0b6ff;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: black;
+  background-color: #fff;
+  border: 5px;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.input-radio, .input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+}
+
+.suggestion {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+  font-size: 20px;
+}
+
+.submit-button {
+  font-size: 25px;
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #6e76d4;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #060926;
+  color: white;
+  font-size: 20px;
+}

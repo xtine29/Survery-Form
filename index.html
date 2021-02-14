@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Truculenta&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+  		<header class="header">
+    		<h1 id="title" class="text-center">Online Distance Learning Survey</h1>
+    		<p id="description" class="text-center">Note: This is not an official survey site, this is for project purposes only.<br>However, can you tell us more about yourself.</p>
+  		</header>
+<!-- Survey Form Information -->
+  		<form id="survey-form">
+    		<div class="form-group">
+      			<label id="name-label" for="name">Name*</label>
+      			<input
+        			type="text"
+        			name="name"
+        			id="name"
+        			class="form-control"
+        			placeholder="Enter your name"
+        			required
+      			/>
+    		</div>
+    		<div class="form-group">
+      			<label id="email-label" for="email">Email*</label>
+      			<input
+        			type="email"
+        			name="email"
+        			id="email"
+        			class="form-control"
+        			placeholder="Enter your Email"
+        			required
+      			/>
+    		</div>
+    		<div class="form-group">
+      			<label id="number-label" for="number">Age
+      				<span class="clue">(optional)</span>
+      			</label>
+      			<input
+        			type="number"
+        			name="age"
+        			id="number"
+        			min="10"
+        			max="99"
+        			class="form-control"
+        			placeholder="Age"
+      			/>
+    		</div>
+    		<div class="form-group">
+      			<label id="gender-label">Gender</label>
+      			<select id="dropdown" name="role" class="form-control" required>
+        			<option disabled selected value>Select gender</option>
+        			<option value="female">Female</option>
+        			<option value="male">Male</option>
+        			<option value="other">Other</option>
+        			<option value="preferNo">Prefer not to say</option>	
+      			</select>
+    		</div>
+<!-- Survey Proper -->
+			<div class="form-group">
+    			<p>What device/s do you use for distance learning?<span class="clue-question">(Check all that apply)</span> </p>
+    			<label>
+      				<input
+	        			name="device"
+	        			value="laptop"
+          				type="checkbox"
+          				class="input-checkbox"
+        			/>Laptop
+    			</label>
+    			<label>
+      				<input
+        				name="device"
+        				value="desktop-pc"
+          				type="checkbox"
+          				class="input-checkbox"
+        			/>Desktop/Pc
+    			</label>
+    			<label>
+      				<input
+        				name="device"
+        				value="tablet"
+          				type="checkbox"
+          				class="input-checkbox"
+      	  			/>Tablet
+    			</label>
+    			<label>
+      				<input
+        				name="device"
+        				value="smartphone"
+        		  		type="checkbox"
+        		  		class="input-checkbox"
+        			/>Smartphone
+    			</label>
+    		</div>
+
+    		<div class="form-group">
+    			<p>How is your University delivering distance learning?</p>
+    			<label>
+    				<input 
+    					name="method"
+    					value="Online" 
+    					type="radio"
+    					class="input-radio"
+    					checked
+    				/>Online
+    			</label>
+    			<label>
+    				<input 
+    					name="method"
+    					value="Module" 
+    					type="radio"
+    					class="input-radio"
+    					checked
+    				/>Printed Module
+    			</label>
+    		</div>
+
+    		<div class="form-group">
+      			<p>How much time do you spend each day on an average on distance education?	</p>
+    			<label>
+        			<input
+          				name="time"
+        			  	value="1-3hr"
+        			  	type="radio"
+        			  	class="input-radio"
+        			  	checked
+        			/>1-3 hours
+   				</label>
+   				<label>
+    		    	<input
+        			  	name="time"
+        			  	value="3-5hr"
+        			  	type="radio"
+        			  	class="input-radio"
+        			  	checked
+       				/>3-5 hours
+   			 	</label>
+				<label>
+        			<input
+        			  	name="time"
+        			  	value="5-7hr"
+        			  	type="radio"
+       				   	class="input-radio"
+       				   	checked
+       				/>5-7 hours
+    			</label>
+    			<label>
+        			<input
+         				name="time"
+        			  	value="7-10hr"
+        			  	type="radio"
+        			  	class="input-radio"
+        			  	checked
+        			/>7-10 hours
+    			</label>
+    			<label>
+        			<input
+        		 	 	name="time"
+        			  	value="10+hr"
+        			  	type="radio"
+        			  	class="input-radio"
+        			  	checked
+       				/>10+ hours
+    			</label>
+    		</div>
+
+    		<div class="form-group">
+    			<p>Do you enjoy learning remotely/online?</p>
+    			<label>
+        			<input
+        		 	 	name="answer"
+        			  	value="yes"
+        			  	type="radio"
+        			  	class="input-radio"
+        			  	checked
+       				/>Yes
+    			</label>
+    			<label>
+        			<input
+        		 	 	name="answer"
+        			  	value="yes-but"
+        			  	type="radio"
+        			  	class="input-radio"
+        			  	checked
+       				/>Yes, but I would like to change a few things
+    			</label>
+    			<label>
+        			<input
+        		 	 	name="answer"
+        			  	value="no-th"
+        			  	type="radio"
+        			  	class="input-radio"
+        			  	checked
+       				/>No, there are quite a few challenges
+    			</label>
+    			<label>
+        			<input
+        		 	 	name="answer"
+        			  	value="no"
+        			  	type="radio"
+        			  	class="input-radio"
+        			  	checked
+       				/>No, not at all
+    			</label>
+    		</div>
+
+    		<div class="form-group">
+	      		<p>Any comments or suggestions?</p>
+      			<textarea
+        			id="comments"
+        			class="suggestion"
+   		     		name="comment"
+	        		placeholder="Enter your comment here..."
+      			></textarea>
+    		</div>
+
+    		<div class="form-group">
+      			<button type="submit" id="submit" class="submit-button">
+      				Submit
+      			</button>
+    		</div>
+  		</form>
+	</div>
+  <footer>
+    <p>Copyright &copy; 2021 by Christine Gonzales. All rights reserved.
+  </footer>
+
+</body>
+</html>
